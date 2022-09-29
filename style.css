@@ -3,8 +3,15 @@
     font-family: sans-serif;
 }
 #lines{
-    height: 25px;
-    width: 4%;
+    height: 30px;
+    width: 5%;
+    margin-left: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+#lines>div{
+    width: 15px;
+    background-color: rgb(231, 18, 18);
 }
 #navbar{
     width: 100%;
@@ -19,7 +26,7 @@
     justify-content: space-around;
 }
 #navbar>div>div>img{
-    height: 80px;
+    height: 70px;
 }
 #navbar>div:nth-child(2){
     width: 15%;
@@ -40,29 +47,39 @@
     font-size: 18px;
     font-weight: 700;
     color: white;
-    background-color: rgb(226, 0, 0);
+    background-color: rgb(215, 15, 15);
     padding: 15px 55px;
     border-radius: 30px;
     border: none;
 }
 #navbar>div:nth-child(3){
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
     margin-left: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
+    transition: 0.3s;
 }
 #navbar>div:nth-child(4){
+    width: 50px;
+    height: 50px;
+    margin-top: 15px;
     margin-left: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
+    transition: 0.3s;
 }
 #navbar>div:nth-child(3):hover{
+    transform: scale(1.1);
     cursor: pointer;
 }
 #navbar>div:nth-child(4):hover{
+    transform: scale(1.1);
     cursor: pointer;
 }
 #black{
@@ -130,11 +147,16 @@
     gap: 20px;
 }
 #grid-container>div{
+    overflow: hidden;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 9px 0px;
 }
 #grid-container>div>div>img{
     background-color: #f7f7f7;
     height: 270px;
+    transition: 0.8s;
+}
+#grid-container>div>div>img:hover{
+    transform: scale(1.1);
 }
 #grid-container>div>div:nth-child(2){
    width: 80%;
@@ -184,6 +206,7 @@
 #red>div:nth-child(3)>div{
     width: 25px;
     background-color: white;
+    
 }
 #red>div:nth-child(4){
     width: 10%;
@@ -329,6 +352,7 @@ footer>div:nth-child(2)>p{
     opacity: 0.9;
 }
 .underp:hover{
+    cursor: pointer;
     text-decoration: underline;
 }
 #container+div{
@@ -340,7 +364,7 @@ footer>div:nth-child(2)>p{
 #container+div>img{
     height: 300px;
     border-radius: 50%;
-    box-shadow: rgba(255, 255, 255, 0.893) 0px 7px 8px 0px;
+    box-shadow: rgba(161, 161, 161, 0.893) 0px 7px 8px 0px;
 }
 footer>div:nth-child(5){
     margin-top: 40px;
@@ -356,4 +380,13 @@ footer>div:nth-child(5)>div{
     font-size: 13px;
     line-height: 20px;
     opacity: 0.9;
+}
+#icons{
+    width: 170px;
+    display: flex;
+    justify-content: space-around;
+}
+#icons:hover{
+    transition-delay: 0.8s;
+    cursor: pointer;
 }
