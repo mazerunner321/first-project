@@ -126,6 +126,7 @@
 }
 #top-block>div>img{
     height: 450px;
+    border-radius: 15px;
 }
 #black2{
     height: 50px;
@@ -156,7 +157,7 @@
     transition: 0.8s;
 }
 #grid-container>div>div>img:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 #grid-container>div>div:nth-child(2){
    width: 80%;
