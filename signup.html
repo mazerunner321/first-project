@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome To Login Page</title>
+    <title>Create an Account</title>
     <style>
         *{
             margin: 0%;
@@ -22,9 +22,10 @@
             margin-top: 20px;
         }
         form{
-            height: 500px;
+            height: 700px;
             width: 30%;
             margin: auto;
+            margin-bottom: 5%;
             margin-top: 50px;
             line-height: 20px;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -42,7 +43,7 @@
             background-color: rgb(229, 4, 4);
         }
         #head{
-            font-size: 30px;
+            font-size: 35px;
             font-weight: 700;
             margin-left: 40px;
         }
@@ -86,34 +87,42 @@
 </head>
 <body>
     <div id="top">
-       <a href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSITEM0f0Umx6DS74YbxxTE8eFFel6J5n6Daw&usqp=CAU" alt=""></a>
-    </div>
+        <a href="index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSITEM0f0Umx6DS74YbxxTE8eFFel6J5n6Daw&usqp=CAU" alt=""></a>
+     </div>
     <form action="">
         <div>
             <div></div>
             <div></div>
             <div></div>
         </div>
-        <label id="head">LOG IN TO KFC</label>
+        <label id="head">CREATE AN ACCOUNT</label>
         <br>
         <br>
-        <input id="lsemail" type="email" placeholder="Email">
+        <input id="fname" type="text" placeholder="First Name">
         <br>
         <br>
-        <input id="lspw" type="password" placeholder="Password">
+        <input id="lname" type="text" placeholder="Last Name">
+        <br>
+        <br>
+        <input id="email" type="email" placeholder="Email">
+        <br>
+        <br>
+        <input id="pw" type="password" placeholder="Password">
+        <br>
+        <br>
+        <input id="cpw" type="password" placeholder="Confirm Password">
         <br>
         <br>
         <br>
-        <p>By logging into the application or proceeding as a guest, you agree to our <span>Privacy Policy</span> and <span>Terms of Use</span>.</p>
+        <p>By Signing up, you agree to our <span>Privacy Policy</span> and <span>Terms of Use</span>.</p>
         <br>
         <br>
-        <button>Log In</button>
+        <button onclick="signupFun()">Create Account</button>
         <br>
         <br>
-        <p>Don't have an account? <a href="signup.html"><span>Join Now</span></a></p>
+        <p>Already a Member? <a href="loginpage.html"><span>Log In</span></a></p>
     </form>
-
 </body>
 </html>
 
-<script src="login.js"></script>
+<script src="signup.js"></script>
